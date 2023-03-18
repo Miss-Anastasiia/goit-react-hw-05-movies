@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export const Section = styled.section`
   display: flex;
@@ -38,7 +38,7 @@ export const GenresItem = styled.li`
   margin-right: 7px;
 `;
 
-export const LinkReturn = styled(NavLink)`
+export const LinkReturn = styled(Link)`
   display: flex;
   justify-content: center;
   text-decoration: none;
@@ -56,7 +56,7 @@ export const LinkReturn = styled(NavLink)`
   }
 `;
 
-export const LinkCast = styled(NavLink)`
+export const LinkCast = styled(Link)`
   height: 45px;
   padding: 10px 30px;
   margin-right: 15px;
@@ -74,7 +74,7 @@ export const LinkCast = styled(NavLink)`
     box-shadow: inset 1px 1px 2px ${props => props.theme.colors.white},
       inset -1px -1px 2px ${props => props.theme.colors.active};
 `;
-export const LinkRewiews = styled(NavLink)`
+export const LinkRewiews = styled(Link)`
   height: 45px;
   padding: 10px 15px;
   margin-right: 15px;
